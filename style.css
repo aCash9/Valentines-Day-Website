@@ -1,0 +1,91 @@
+body {
+  background-image: url('ValentinesDay\emoji.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 80%;
+  position: relative;
+  bottom:20%;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: pink;
+  color: white;
+  border: none;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+#yes {
+  padding: 10px 20px;
+  background-color: pink;
+  color: white;
+  border: none;
+  font-size: 24px;
+}
+
+#no {
+  padding: 10px 20px;
+  background-color: gray;
+  color: white;
+  border: none;
+  font-size: 24px;
+}
+
+button {
+  transition: transform 0.2s ease-in-out;
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
+button {
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:active {
+  background-color: pink;
+}
+
+button {
+  margin-right: 20px;
+}
+
+button {
+  padding: 10px;
+}
+
+#yes {
+  position: absolute;
+  left: 49.32%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(81, 56, 225);
+  padding: 20px;
+  width: 300px;
+}

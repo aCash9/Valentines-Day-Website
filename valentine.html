@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Valentine's Day Date</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <button id="yes" style="z-index: 2;">Yes</button>
+    <div class="container">
+        <h1>Will you be my Valentine?</h1>
+        <p style="background-image: url('ValentinesDay\emoji.jpg');"></p>
+        <p>I would love to take you out on a special date for Valentine's Day. Please let me know if you're free on
+            February 14th.</p>
+        <button id="no">No</button>
+    </div>
+    
+    <script>
+        setTimeout(function () {
+            alert("Can't click the yes button?");
+        }, 5000);
+        setTimeout(function () {
+            alert("Maybe the button know you don't want to go for a date");
+        }, 10000);
+        setTimeout(function () {
+            alert("Or am I just playing tricks?!!");
+        }, 15000);
+
+        document.getElementById("yes").addEventListener("mouseover", jumpButton);
+
+        var heading = document.getElementsByTagName('h1')[0];
+        var headingTop = heading.offsetTop;
+        var headingLeft = heading.offsetLeft;
+        var headingWidth = heading.offsetWidth;
+        var headingHeight = heading.offsetHeight;
+
+        function jumpButton() {
+            var button = document.getElementById("yes");
+            var maxX = window.innerWidth - button.offsetWidth;
+            var maxY = window.innerHeight - button.offsetHeight;
+            var newX = Math.floor(Math.random() * maxX);
+            var newY = Math.floor(Math.random() * maxY);
+
+            // Check if the new position is inside the heading element
+            if (newX > headingLeft && newX < headingLeft + headingWidth && newY > headingTop && newY < headingTop + headingHeight) {
+                // If it is, call the function again to get a new position
+                jumpButton();
+            } else {
+                button.style.left = newX + "px";
+                button.style.top = newY + "px";
+            }
+        }
+    </script>
+</body>
+
+</html>
