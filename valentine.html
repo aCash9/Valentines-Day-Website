@@ -12,21 +12,21 @@
     <div class="container">
         <h1>Will you be my Valentine?</h1>
         <p style="background-image: url('ValentinesDay\emoji.jpg');"></p>
-        <p>I would love to take you out on a special date for Valentine's Day. Please let me know if you're free on
-            February 14th.</p>
-        <button id="no">No</button>
+        <p>I would love to take you out on a special date for Valentine's Day.</p>
+        <button id="no" onclick="window.location.href = 'noPage.html'">No</button>
+
     </div>
     
     <script>
         setTimeout(function () {
             alert("Can't click the yes button?");
-        }, 5000);
+        }, 20000);
         setTimeout(function () {
-            alert("Maybe the button know you don't want to go for a date");
-        }, 10000);
+            alert("Maybe the button is trying to us something.");
+        }, 25000);
         setTimeout(function () {
             alert("Or am I just playing tricks?!!");
-        }, 15000);
+        }, 30000);
 
         document.getElementById("yes").addEventListener("mouseover", jumpButton);
 

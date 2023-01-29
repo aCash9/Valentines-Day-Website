@@ -1,0 +1,35 @@
+body {
+    background-image: url('flo.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#text-1,
+#text-2,
+#text-3 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#text-2 {
+    display: none;
+}
+
+audio {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
