@@ -11,8 +11,6 @@
 <body>
     <div id="text-1">I thought would try more to click Yes</div>
     <div id="text-2" style="display:none;">Okay it seems I have to be more persuasive</div>
-    <div id="text-3" style="display:none;">Please play the song</div>
-    <audio id="music" src="musicDrake.mp3" controls autoplay loop></audio>
 
     <script>
         setTimeout(function () {
@@ -22,20 +20,13 @@
         setTimeout(function () {
             document.getElementById("text-2").style.display = "none";
         }, 10000);
-        // hide controls by default
-        document.getElementById("music").controls = false;
-        
-        setTimeout(function () {
-            // show controls after 10 seconds
-            document.getElementById("music").controls = true;
-        }, 10000);
-        
         setTimeout(function () {
             document.getElementById("text-3").style.display = "block";
         }, 10000);
         setTimeout(function () {
-            document.getElementById("text-3").style.display = "none";
-        }, 12000);
+            // open new html page after 25 seconds
+            window.location.href = "Dateoptions.html";
+        }, 10000);
 
     </script>
     
