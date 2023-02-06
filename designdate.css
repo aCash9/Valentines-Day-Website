@@ -1,0 +1,29 @@
+.question-container {
+    padding: 20px;
+  }
+  .question {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .options {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .options li {
+    margin-bottom: 10px;
+  }
+  .options input[type="radio"] {
+    margin-right: 10px;
+  }
+  /* body {
+    background-image: url('flo.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+} */
+
+
+

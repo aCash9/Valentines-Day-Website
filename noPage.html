@@ -11,6 +11,7 @@
 <body>
     <div id="text-1">I thought would try more to click Yes</div>
     <div id="text-2" style="display:none;">Okay it seems I have to be more persuasive</div>
+    <div id="text-3" style="display:none;">Lets design the date</div>
 
     <script>
         setTimeout(function () {
@@ -24,9 +25,12 @@
             document.getElementById("text-3").style.display = "block";
         }, 10000);
         setTimeout(function () {
+            document.getElementById("text-3").style.display = "block";
+        }, 15000);
+        setTimeout(function () {
             // open new html page after 25 seconds
-            window.location.href = "Dateoptions.html";
-        }, 10000);
+            window.location.href = "food.html";
+        }, 15000);
 
     </script>
     
