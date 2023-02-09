@@ -89,3 +89,8 @@ button {
   padding: 20px;
   width: 300px;
 }
+#music {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

@@ -14,10 +14,19 @@
         <p style="background-image: url('ValentinesDay\emoji.jpg');"></p>
         <p>I would love to take you out on a special date for Valentine's Day.</p>
         <button id="no" onclick="window.location.href = 'noPage.html'">No</button>
-
+        <audio id="music" src="music.mp3"control autoplay loop></audio>
     </div>
-    
+
     <script>
+        // document.getElementById("music").controls = false;
+        var audio = document.getElementById("music");
+
+        document.addEventListener("mousemove", function () {
+            audio.play();
+        });
+        setTimeout(function () {
+            alert("click click");
+        }, 500);
         setTimeout(function () {
             alert("Can't click the yes button?");
         }, 20000);
